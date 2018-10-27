@@ -72,6 +72,12 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Models\APIClasses\" />
+    <Folder Include="SportsFeedAPI\" />
+    <Folder Include="SportsFeedAPI\Interface\" />
+    <Folder Include="Models\APIClasses\Responses\" />
+    <Folder Include="SportsFeedAPI\Services\" />
+    <Folder Include="Models\APIClasses\Models\" />
+    <Folder Include="Models\APIClasses\Models\Statistics\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -80,13 +86,30 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Models\APIClasses\Schedule.cs" />
-    <Compile Include="Models\APIClasses\Team.cs" />
     <Compile Include="Models\APIClasses\Score.cs" />
     <Compile Include="Models\APIClasses\Game.cs" />
-    <Compile Include="Models\APIClasses\DailyGames.cs" />
     <Compile Include="Models\APIClasses\TeamReference.cs" />
     <Compile Include="Models\APIClasses\VenueReference.cs" />
     <Compile Include="Models\APIClasses\References.cs" />
+    <Compile Include="SportsFeedAPI\Interface\IScheduleService.cs" />
+    <Compile Include="Models\APIClasses\Player.cs" />
+    <Compile Include="Models\APIClasses\Responses\DailyGames.cs" />
+    <Compile Include="Models\APIClasses\Responses\GetPlayers.cs" />
+    <Compile Include="SportsFeedAPI\BaseAPIService.cs" />
+    <Compile Include="SportsFeedAPI\Services\PlayerService.cs" />
+    <Compile Include="SportsFeedAPI\Services\ScheduleService.cs" />
+    <Compile Include="SportsFeedAPI\Interface\IPlayerService.cs" />
+    <Compile Include="Models\APIClasses\Responses\GetSeasonSchedule.cs" />
+    <Compile Include="Models\APIClasses\Responses\SeasonalPlayerGameLog.cs" />
+    <Compile Include="Models\APIClasses\Models\GameLog.cs" />
+    <Compile Include="Models\APIClasses\Models\Team.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\FieldGoals.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\FreeThrows.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\Rebounds.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\Stats.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\Offense.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\Defense.cs" />
+    <Compile Include="Models\APIClasses\Models\Statistics\Miscellaneous.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />

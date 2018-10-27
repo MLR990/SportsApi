@@ -19,7 +19,7 @@ namespace SportsAPI.Tests.Controllers
             var controller = new HomeController();
 
             // Act
-            var result = (ViewResult)controller.Index();
+            var result = (ViewResult)controller.HomePage();
 
             var mvcName = typeof(Controller).Assembly.GetName();
             var isMono = Type.GetType("Mono.Runtime") != null;
